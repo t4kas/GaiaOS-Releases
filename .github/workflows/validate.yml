@@ -1,0 +1,16 @@
+name: Validate update channels
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate both channels
+        run: python3 tools/validate_channels.py
+      - name: Run manifest regression tests
+        run: python3 -m unittest discover -s tests -v
