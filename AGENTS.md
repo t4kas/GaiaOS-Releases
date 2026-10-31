@@ -16,4 +16,5 @@ Upload and verify release assets before updating a channel pointer. Keep the pre
 release downloadable. Validate both channel manifests and run the tests before pushing.
 Do not claim the updater, package signing or publishing pipeline is operational until
 it has been implemented and verified. The initial feeds intentionally have no release.
-Use branches/PRs for later changes and inspect current remote heads before writing.
+There is one development chat. Commit tested routine changes directly to main; use a
+PR only if Chris explicitly requests one. Inspect current remote heads before writing.
