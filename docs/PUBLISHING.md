@@ -1,39 +1,38 @@
-# Publication policy
+# Direct GitHub Releases publication
 
-## Default development publication: Beta
+GitHub Releases hosts all update artifacts; GitHub Actions is not used. Source
+pushes do not themselves create binaries. The source repository provides local
+`dev release`, package-update.py and publish-update.py commands.
 
-During future GaiaOS development, publish tested update builds to Beta by default.
-Do not modify Stable as part of routine Beta work. No timer, background watcher or
-automatic publisher is configured by this repository setup.
+1. Select a clean source commit. Run quick checks on the available environment.
+2. Build the Debian 13 amd64 application on a compatible machine/container. No VM
+   acceptance step is automatically invoked; Chris owns device/VM testing.
+3. Sign the package and checksum list with the existing trusted private key file.
+   The private key must match the committed public trust key. Keep credentials
+   on the publisher; never put them in this repository, release assets or devices.
+4. Upload a uniquely versioned GitHub draft release; Beta is a prerelease.
+5. Verify uploaded size/digest, publish, and verify anonymous public download
+   bytes. Only then update the selected channel pointer and read it back.
+6. Retain old releases and record the exact source, quick checks and pending
+   acceptance in release notes. A failed/unreferenced publication does not justify
+   reusing its tag. Review the draft/release before retrying.
 
-The pipeline to be implemented must:
+The local command defaults to preparing a signed bundle, with `--publish` opting
+into the upload/pointer step. Normal development must publish to Beta or report
+its concrete credential/build blocker. Version selection uses channel state and
+existing release/tag names, including authenticated drafts, without an Actions
+run counter. A retained bundle can be published by publish-update.py without a
+rebuild. See the source docs/SOFTWARE-UPDATES.md for complete commands.
 
-1. Select an exact tested source commit and build a compatible binary update package.
-2. Check packaging, required files, compatibility and startup; generate integrity and
-   authenticity metadata. Keep private source and signing credentials private.
-3. Upload all files to a uniquely tagged GitHub prerelease for Beta.
-4. Verify the uploaded asset bytes, size, checksum, signature and download availability.
-5. Generate and validate the Beta manifest against the real assets, then atomically
-   publish that channel pointer. Keep prior downloads available for recovery.
-6. Record the source commit, checks and known limitations in the release notes/status.
+`--attach` distributes existing full OS images or other artifacts in the same
+GitHub Release with signed SHA256SUMS. Each asset must be smaller than 2 GiB.
+The application channel contract still contains only compatible launcher packages.
+Attached ISO images are manual installation media. Kernel/base-system installation
+inside Gaia requires a separate supported installer and rollback protocol.
 
-An application update can avoid rebuilding an ISO. It still needs a build when native
-code changes and a running system for acceptance testing. VM and hardware verification
-remain necessary where behavior depends on the compositor, emulators or devices.
+Stable requires a new explicit instruction from Chris and `--authorize-stable`.
+A source commit, Beta publication or passing quick test is not Stable authorization.
+VM/device tests are run by Chris for now; never claim they passed without his result.
 
-## Explicit user publication: Stable
-
-Publish/promote Stable only when Chris explicitly asks for a Stable release. A Beta
-publication or a source merge is not Stable authorization. Use a normal release tag,
-validate the Stable feed, and retain the prior Stable artifacts. An intentional
-promotion must identify the tested content and any packaging changes; do not silently
-relabel an untested binary. Beta may continue independently.
-
-The policy is recorded for collaborators; it is not yet a GitHub environment approval
-rule or a cryptographically enforced permission. The real publishing workflow and
-its credentials/approval controls will be configured in the next phase.
-
-## Current state
-
-There are no binary releases to publish/promote at initialization. Keep both feeds
-at `release: null` until the package builder and updater contract are implemented.
+No real signed package has been published yet. Both channel feeds remain empty
+until a compatible build and matching signing/publishing credentials are available.
