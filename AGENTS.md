@@ -4,9 +4,11 @@ Read README.md, PROJECT-STATUS.md and docs/PUBLISHING.md before changes.
 This repository is public: keep private source, credentials, signing private keys,
 ROMs, BIOS files, personal data and development/runtime state out of it.
 
-Beta is the default publication channel during GaiaOS development. Publish a Beta
-only when a real compatible package has been built and tested. A source-only change
-must not create a fake update or claim an unbuilt package exists.
+Every completed development change must produce a new tested Beta release, including
+documentation/configuration changes. Version numbers are managed automatically and
+must advance beyond the latest Stable/Beta releases; never reuse release tags.
+If a build/signing/publishing prerequisite blocks publication, report it explicitly.
+Never create a fake update or claim an unbuilt package exists.
 
 Change the Stable feed or publish/promote a Stable release only when Chris explicitly
 requests a Stable release in the active conversation. Preserve that release decision
