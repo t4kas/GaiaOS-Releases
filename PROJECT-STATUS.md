@@ -16,9 +16,14 @@ Updated: 31 October 2026.
 ## Pending live publication
 
 No signed binary release is published; channels/beta.json and channels/stable.json
-still contain release:null. The source session has no configured private signing
-key file or release write token. A compatible production build machine/container
-and those existing credentials are needed; the old Debian test VM is not assumed.
+still contain release:null. Chris supplied the existing matching signing key and a
+repository write token; they are configured privately for the current source session.
+Authenticated repository access and a real Contents write are verified. No secret is
+stored in source, release assets or Gaia devices. The release plan succeeds, but
+production packaging stops at its Debian 13 amd64 build-target guard on this Ubuntu
+host. The attempted rootless Debian runner lacks an allowed runtime capability.
+A compatible local build machine/container is still needed; the old Debian test VM
+was not used. Actual release upload/install/restart remain unverified.
 Full kernel/base-system in-app updating is not implemented by hosting ISO images.
 
 Local manifest validation and all 6 regression tests passed before this documentation
