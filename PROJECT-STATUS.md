@@ -2,6 +2,28 @@
 
 Updated: 1 November 2026.
 
+## Beta 0.4.8-beta.2 published — 31 October 2026
+
+Release: https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.2
+Source `5283791aea04fa0eaa7a92483f31cffd04e5d885` (GaiaOS main a9af5d5 plus claim;
+includes PERF-052 and UPDATE-NET-051). Claude Code built and signed it with
+`./dev release --key <file>` in a Debian 13 amd64 chroot (41 Python + 4 CTest
+passed; both Ed25519 signatures verified). The Claude cloud session may not create
+GitHub releases, so Chris created the pre-release in the GitHub web UI from the
+unchanged signed bundle. The release was verified before advancing the feed: all
+four anonymous downloads were byte-identical to the signed bundle, and GitHub digests matched.
+
+| Asset | Bytes | SHA-256 |
+| --- | --- | --- |
+| gaia-launcher-0.4.8-beta.2-x86_64.tar.zst | 7234942 | ab20f9b7f1ebf967893e08d776148071f71ccf28b85618d94a4456e8d9317805 |
+| gaia-launcher-0.4.8-beta.2-x86_64.tar.zst.sig | 64 | 557568bb9d80f64e3a73767dcccdb2bf1ebdacbab797bbcff9fa6bad6d41af26 |
+| SHA256SUMS | 220 | 635b6d031cc010227b04efc3b8b1f74963458c137fb0bc252b2acb0ad4fd4a79 |
+| SHA256SUMS.sig | 64 | 02cd47073091f91176c982ee9c174e035c2a42b1d1e689299702ae1081a15bfe |
+
+Beta feed advanced to 0.4.8-beta.2 in the manifest format written by
+tools/publish-update.py; both channel manifests and 6 distribution tests pass.
+Stable remains null. Chris owns device/VM acceptance.
+
 ## Beta 0.4.8-beta.1 published — 1 November 2026
 
 Built and signed on Debian 13 amd64 in the prepared gaia-dev:debian13 container

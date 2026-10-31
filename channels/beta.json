@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.1",
-    "tag": "v0.4.8-beta.1",
-    "published_at": "2026-10-31T22:20:00.625397Z",
-    "source_commit": "f0300473315873854fb7ee04d3e28a46ef55372e",
+    "version": "0.4.8-beta.2",
+    "tag": "v0.4.8-beta.2",
+    "published_at": "2026-10-31T23:53:12Z",
+    "source_commit": "5283791aea04fa0eaa7a92483f31cffd04e5d885",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.1\n\nSource: f0300473315873854fb7ee04d3e28a46ef55372e\n\nQuick local checks passed. VM/hardware acceptance: pending Chris. Full OS images, when attached, are manual installation media; the current in-app installer handles launcher packages.\n",
+    "release_notes": "GaiaOS 0.4.8-beta.2\n\nSource: 5283791aea04fa0eaa7a92483f31cffd04e5d885\n\nQuick local checks passed. VM/hardware acceptance: pending Chris. Full OS images, when attached, are manual installation media; the current in-app installer handles launcher packages.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.1-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.1/gaia-launcher-0.4.8-beta.1-x86_64.tar.zst",
-        "size_bytes": 7225450,
-        "sha256": "e2dc1c2aaa5050827534c856e77cdd03d05ce7e3513fed7ded56afade14d583f"
+        "file_name": "gaia-launcher-0.4.8-beta.2-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.2/gaia-launcher-0.4.8-beta.2-x86_64.tar.zst",
+        "size_bytes": 7234942,
+        "sha256": "ab20f9b7f1ebf967893e08d776148071f71ccf28b85618d94a4456e8d9317805"
       }
     ]
   }
