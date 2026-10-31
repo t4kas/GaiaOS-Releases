@@ -34,5 +34,5 @@ Stable requires a new explicit instruction from Chris and `--authorize-stable`.
 A source commit, Beta publication or passing quick test is not Stable authorization.
 VM/device tests are run by Chris for now; never claim they passed without his result.
 
-No real signed package has been published yet. Both channel feeds remain empty
-until a compatible build and matching signing/publishing credentials are available.
+Signed Beta 0.4.8-beta.1 is published and verified; Stable remains empty. See
+[the publication record](RELEASE-0.4.8-beta.1.md) for checks, source and hashes.

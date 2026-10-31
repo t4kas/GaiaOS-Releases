@@ -14,10 +14,10 @@ Feed endpoints used by the Gaia updater:
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/stable.json`
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/beta.json`
 
-Both feeds still contain `release: null`: no signed update has been published.
-The source repository now contains the updater, signature verification, rollback,
-local builder and publisher. Production publication needs the existing signing
-private key and a repository write token on the publishing machine.
+Beta now points to signed [0.4.8-beta.1](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.1).
+All four public downloads and the Beta feed were verified; Stable remains empty.
+See the [publication record](docs/RELEASE-0.4.8-beta.1.md) for source, checks and hashes.
+VM/device acceptance remains pending Chris. The updater currently installs launcher/application packages.
 
 GitHub Releases is the distribution host for all update artifacts. There are no
 GitHub Actions workflows in either repository. Maintainers build/sign locally,
@@ -36,8 +36,7 @@ Add `--attach /path/GaiaOS.iso` to include existing full OS installation media a
 signed checksums in the same release. The current in-Gaia installer handles signed
 launcher/application packages; full OS images are manual installation media until
 a base-system update/rollback mechanism is implemented. They are not advertised
-as app-install assets. Tags are unique versions such as `v0.4.8-beta.1` (examples,
-not currently published releases). The selected channel feed, not GitHub's generic
+as app-install assets. Tags are unique versions such as `v0.4.8-beta.1` (0.4.8-beta.1 is published). The selected channel feed, not GitHub's generic
 latest-release endpoint, identifies the correct application update.
 
 Codex/Claude run quick source/native checks when available. Chris owns VM/device
