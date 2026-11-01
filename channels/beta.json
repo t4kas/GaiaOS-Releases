@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.2",
-    "tag": "v0.4.8-beta.2",
-    "published_at": "2026-10-31T23:53:12Z",
-    "source_commit": "5283791aea04fa0eaa7a92483f31cffd04e5d885",
+    "version": "0.4.8-beta.3",
+    "tag": "v0.4.8-beta.3",
+    "published_at": "2026-11-01T20:31:51.104676Z",
+    "source_commit": "43d47bb267e3780e406f364f53027d032f4bf4f2",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.2\n\nSource: 5283791aea04fa0eaa7a92483f31cffd04e5d885\n\nQuick local checks passed. VM/hardware acceptance: pending Chris. Full OS images, when attached, are manual installation media; the current in-app installer handles launcher packages.\n",
+    "release_notes": "GaiaOS 0.4.8-beta.3\n\nSource: 43d47bb267e3780e406f364f53027d032f4bf4f2\n\nFresh Debian 13 amd64 launcher/application build including the corrected installer\nQML handlers and QML syntax validation. The old rejected bundle was not used.\nIncludes the current source integration for GPU compatibility, the graphical\ninstaller and full-system updates; the application package does not install an\nOS image, firmware, an A/B layout or privileged system provisioning.\n\nChecks passed: 61 Python cases, 19 QML syntax checks, ShellCheck, native Qt 6.8.2\nbuild and four CTest suites (62 native cases). Installer welcome rendered under\nXvfb/Mesa. Full native UI probes passed with persistent Xvfb and core X11 input\n(QT_XCB_NO_XI2=1), keeping auto-repeat enabled. The default Xvfb input path showed\nrepeat-event/timing failures; no production input workaround was added.\n\nVM/hardware acceptance remains pending Chris. No ISO, system bundle or disk image\nis attached. Full-system installation/reboot/rollback still needs separate signed\nmedia, trust provisioning and acceptance. Stable remains unchanged.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.2-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.2/gaia-launcher-0.4.8-beta.2-x86_64.tar.zst",
-        "size_bytes": 7234942,
-        "sha256": "ab20f9b7f1ebf967893e08d776148071f71ccf28b85618d94a4456e8d9317805"
+        "file_name": "gaia-launcher-0.4.8-beta.3-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.3/gaia-launcher-0.4.8-beta.3-x86_64.tar.zst",
+        "size_bytes": 7466811,
+        "sha256": "b297f656e2e36ee5fcc18be8050efe7d09fc225d924e26e82c5fc1b52d7cd4df"
       }
     ]
   }
