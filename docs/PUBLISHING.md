@@ -36,5 +36,10 @@ Stable requires a new explicit instruction from Chris and `--authorize-stable`.
 A source commit, Beta publication or passing quick test is not Stable authorization.
 VM/device tests are run by Chris for now; never claim they passed without his result.
 
-Signed Beta 0.4.8-beta.6 is published and verified; Stable remains empty. See
-[the publication record](RELEASE-0.4.8-beta.6.md) for checks, source and hashes.
+Signed Beta 0.4.8-beta.7 is published and verified; Stable remains empty. See
+[the publication record](RELEASE-0.4.8-beta.7.md) for checks, source and hashes.
+
+For RELEASE-065, an upload-only temporary job transferred an already locally signed
+bundle using the built-in repository token. It was removed after verified upload;
+no private keys/personal tokens were sent to the runner. This one-time transfer did
+not add an ongoing Actions requirement. See the .7 publication record.

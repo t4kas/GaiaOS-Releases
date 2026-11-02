@@ -14,9 +14,9 @@ Feed endpoints used by the Gaia updater:
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/stable.json`
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/beta.json`
 
-Beta now points to signed [0.4.8-beta.6](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.6).
+Beta now points to signed [0.4.8-beta.7](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.7).
 All four public downloads and the Beta feed were verified; Stable remains empty.
-See the [publication record](docs/RELEASE-0.4.8-beta.6.md) for source, checks and hashes.
+See the [publication record](docs/RELEASE-0.4.8-beta.7.md) for source, checks and hashes.
 VM/device acceptance remains pending Chris. The updater currently installs launcher/application packages.
 
 GitHub Releases is the distribution host for all update artifacts. Bounded, optional source-repository

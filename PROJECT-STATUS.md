@@ -2,6 +2,29 @@
 
 Updated: 2 November 2026.
 
+## Beta 0.4.8-beta.7 published — ARTWORK-063 / RELEASE-065 (2 November 2026)
+
+Signed launcher **0.4.8-beta.7** is published:
+https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.7 .
+It adds automatic Libretro artwork and optional ScreenScraper BYO developer
+credentials under Settings → Software → Library artwork, with local-image priority,
+offline cache, credential testing/removal, region choice and complete-cover display.
+
+Exact built source `b6d605d51b8c0a3c75ae11ac317cd1e1097f3c41`.
+Package 8,257,644 bytes; SHA-256 `6b1f4bc1c47024c5a434b9feb1d84c575a5812bb4cfd9c5b037f870855dec550`.
+Retained Debian stage, not a fresh build. 105 Python cases, 24 QML syntax checks,
+native build, all six CTest suites (50.97s), native artwork/Files and full UI
+regressions passed in source QA 41467847726. Light/Dark artwork captures reviewed.
+Both signatures/checksums and all four anonymous downloads verified independently.
+
+Keys stayed local. A one-time upload-only GitHub job used its built-in repository
+token because this chat's connector does not expose release/asset-upload operations.
+Upload run 41476305851 passed; its temporary workflow was removed after success.
+No personal token/private key was supplied to Actions; no ongoing upload dependency.
+Beta feed advanced and read back; Stable remains null. Publisher reservation released.
+No ISO/reinstall or full-system bundle; Chris owns device/provider/game acceptance.
+Full provenance and asset table: docs/RELEASE-0.4.8-beta.7.md.
+
 ## Beta 0.4.8-beta.6 published — FILES-062 (2 November 2026)
 
 Home's button before Settings is now **Files**. The Gaia Light/Dark browser has
