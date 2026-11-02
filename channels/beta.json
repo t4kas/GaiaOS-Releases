@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.3",
-    "tag": "v0.4.8-beta.3",
-    "published_at": "2026-11-01T20:31:51.104676Z",
-    "source_commit": "43d47bb267e3780e406f364f53027d032f4bf4f2",
+    "version": "0.4.8-beta.4",
+    "tag": "v0.4.8-beta.4",
+    "published_at": "2026-11-02T10:47:02.199416Z",
+    "source_commit": "c08e80d78d6e2204a72cad5d2181d7ec88e6d425",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.3\n\nSource: 43d47bb267e3780e406f364f53027d032f4bf4f2\n\nFresh Debian 13 amd64 launcher/application build including the corrected installer\nQML handlers and QML syntax validation. The old rejected bundle was not used.\nIncludes the current source integration for GPU compatibility, the graphical\ninstaller and full-system updates; the application package does not install an\nOS image, firmware, an A/B layout or privileged system provisioning.\n\nChecks passed: 61 Python cases, 19 QML syntax checks, ShellCheck, native Qt 6.8.2\nbuild and four CTest suites (62 native cases). Installer welcome rendered under\nXvfb/Mesa. Full native UI probes passed with persistent Xvfb and core X11 input\n(QT_XCB_NO_XI2=1), keeping auto-repeat enabled. The default Xvfb input path showed\nrepeat-event/timing failures; no production input workaround was added.\n\nVM/hardware acceptance remains pending Chris. No ISO, system bundle or disk image\nis attached. Full-system installation/reboot/rollback still needs separate signed\nmedia, trust provisioning and acceptance. Stable remains unchanged.\n",
+    "release_notes": "Gaia Settings now provides scoped RetroArch Video, Audio, Saves & resume and Controllers preferences, including rotation, threaded video, latency/synchronization, automatic states, save intervals/slots and player/autodetection options. Per-setting help explains defaults, inheritance and support; settings apply on the next game launch.\n\nGaia-styled Light/Dark dialogs and action buttons now cover settings information, emulator readiness, advanced-frontend confirmation, reset confirmation and display Keep/Revert. Long preference lists scroll with controller selection; routine successful changes stay quiet.\n\nValidation: 61 Python cases, 20 authored QML syntax checks, four native CTest suites, hidden Qt settings flow and native UI/input/update/theme/persistence probes. The initial update-retry probe timed out in the full build job; a short runtime-only replay of the same retained native binary passed the complete suite without product changes or recompilation. Native Light/Dark captures use Xvfb and Mesa OpenGL. No game, VM/device, ISO installation or physical audio/controller acceptance is claimed; Chris owns those checks.\n\nThis is a Debian 13 amd64 launcher/application update. It does not replace the base system or installer image. Beta channel only; Stable unchanged.\n\nExact built source: c08e80d78d6e2204a72cad5d2181d7ec88e6d425. Native build/check/captures run: https://github.com/t4kas/GaiaOS/actions/runs/41429568432 . Full UI replay: https://github.com/t4kas/GaiaOS/actions/runs/41431116419 .\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.3-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.3/gaia-launcher-0.4.8-beta.3-x86_64.tar.zst",
-        "size_bytes": 7466811,
-        "sha256": "b297f656e2e36ee5fcc18be8050efe7d09fc225d924e26e82c5fc1b52d7cd4df"
+        "file_name": "gaia-launcher-0.4.8-beta.4-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.4/gaia-launcher-0.4.8-beta.4-x86_64.tar.zst",
+        "size_bytes": 7557627,
+        "sha256": "df757f28329d1f3adf03037b6d08db95b43a7ed1ce94a01c4320edfa5b130603"
       }
     ]
   }
