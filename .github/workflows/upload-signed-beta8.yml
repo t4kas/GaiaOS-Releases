@@ -1,4 +1,5 @@
 name: One-time upload of locally signed Beta 0.4.8-beta.8
+# Attempt 2: package force-added past the *.tar.zst ignore rule.
 on:
   push:
     branches: [main]
