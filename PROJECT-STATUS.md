@@ -1,6 +1,27 @@
 # Release distribution status
 
-Updated: 2 November 2026.
+Updated: 3 November 2026.
+
+## Beta 0.4.8-beta.9 published — UI-GRAPHICS-069 (3 November 2026)
+
+Signed launcher **0.4.8-beta.9** is published:
+https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.9 .
+GPU/Software OpenGL trial with independent 20-second rollback; Gaia decision
+windows, persistent supplied Light/Dark controller prompts and dropdown edge blur;
+fresh UI sound volume 100%, saved preferences preserved. Exact built source
+`707c37cc033dde9a79adbc4e6f073bd5dff3beb0`. Fresh local Debian 13 amd64 build and local signing;
+133 Python cases (one optional skip), 27 QML syntax checks, seven CTest suites,
+native renderer/Files/full UI regressions and Light/Dark visual review passed.
+Package 8,487,633 bytes; SHA-256
+`71efaf74064ac87d33e41003d85bb36283084845e721bde7f2defb9c373be1ef`.
+
+The documented, explicitly approved upload-only fallback used one 9-second job,
+41542664346, with GitHub's built-in token. Keys stayed local; no build/signing on
+Actions. The temporary workflow and duplicate empty draft were removed. All four
+anonymous downloads, both signatures/checksums and Beta read-back were verified;
+feed commit `74447791c5ede4b92fd0bd98bc4c6e244e920a63`. Stable and system feeds are unchanged.
+No ISO/system bundle. Chris owns device/graphics/input/audio/gameplay acceptance.
+Full provenance and assets: docs/RELEASE-0.4.8-beta.9.md.
 
 ## Beta 0.4.8-beta.8 published — UPDATE-SYSTEM-068 (2 November 2026)
 

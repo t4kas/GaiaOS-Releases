@@ -14,10 +14,11 @@ Feed endpoints used by the Gaia updater:
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/stable.json`
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/beta.json`
 
-Beta now points to signed [0.4.8-beta.7](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.7).
-All four public downloads and the Beta feed were verified; Stable remains empty.
-See the [publication record](docs/RELEASE-0.4.8-beta.7.md) for source, checks and hashes.
-VM/device acceptance remains pending Chris. The updater currently installs launcher/application packages.
+Beta now points to signed [0.4.8-beta.9](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.9).
+It adds reversible UI graphics, Gaia decision windows, persistent controller prompts,
+dropdown edge blur and 100% fresh UI audio. All four public downloads and the Beta
+feed were verified; Stable remains empty. See the [publication record](docs/RELEASE-0.4.8-beta.9.md).
+VM/device acceptance remains pending Chris. This is a launcher/application update.
 
 GitHub Releases is the distribution host for all update artifacts. Bounded, optional source-repository
 Actions jobs may build/test unsigned artifacts. Maintainers sign/publish locally,
