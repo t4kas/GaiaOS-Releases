@@ -1,6 +1,8 @@
 # Direct GitHub Releases publication
 
-GitHub Releases hosts all update artifacts; GitHub Actions is not used. Source
+GitHub Releases hosts all update artifacts; publishing is independent of GitHub Actions.
+Optional bounded QA may build/test an unsigned Debian artifact on Actions, then a
+local publisher verifies its source/version and signs it outside the runner. Source
 pushes do not themselves create binaries. The source repository provides local
 `dev release`, package-update.py and publish-update.py commands.
 
@@ -34,5 +36,5 @@ Stable requires a new explicit instruction from Chris and `--authorize-stable`.
 A source commit, Beta publication or passing quick test is not Stable authorization.
 VM/device tests are run by Chris for now; never claim they passed without his result.
 
-Signed Beta 0.4.8-beta.3 is published and verified; Stable remains empty. See
-[the publication record](RELEASE-0.4.8-beta.3.md) for checks, source and hashes.
+Signed Beta 0.4.8-beta.6 is published and verified; Stable remains empty. See
+[the publication record](RELEASE-0.4.8-beta.6.md) for checks, source and hashes.

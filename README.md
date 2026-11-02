@@ -14,14 +14,15 @@ Feed endpoints used by the Gaia updater:
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/stable.json`
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/beta.json`
 
-Beta now points to signed [0.4.8-beta.3](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.3).
+Beta now points to signed [0.4.8-beta.6](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.6).
 All four public downloads and the Beta feed were verified; Stable remains empty.
-See the [publication record](docs/RELEASE-0.4.8-beta.3.md) for source, checks and hashes.
+See the [publication record](docs/RELEASE-0.4.8-beta.6.md) for source, checks and hashes.
 VM/device acceptance remains pending Chris. The updater currently installs launcher/application packages.
 
-GitHub Releases is the distribution host for all update artifacts. There are no
-GitHub Actions workflows in either repository. Maintainers build/sign locally,
-verify anonymous release downloads, then advance the selected feed. Beta is the
+GitHub Releases is the distribution host for all update artifacts. Bounded, optional source-repository
+Actions jobs may build/test unsigned artifacts. Maintainers sign/publish locally,
+verify anonymous release downloads, then advance the selected feed. No signing or
+publishing credentials are installed on Actions. Beta is the
 default for development; Stable remains Chris's explicit decision. Devices need
 no GitHub account/token to download public assets.
 
