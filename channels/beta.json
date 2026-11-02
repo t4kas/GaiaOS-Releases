@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.5",
-    "tag": "v0.4.8-beta.5",
-    "published_at": "2026-11-02T11:52:02.476801Z",
-    "source_commit": "e3c3cc94a95d5b5b08ea460fcd1fa0d8fba676d3",
+    "version": "0.4.8-beta.6",
+    "tag": "v0.4.8-beta.6",
+    "published_at": "2026-11-02T12:11:57.180726Z",
+    "source_commit": "daad1f777489bd365dc676ff837eecd972fd9c62",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "Gaia Files replaces the Home Apps button with a controller-friendly browser and manager using Gaia Light/Dark UI. ROMs and Emulator Files tabs use actual Gaia data paths, with console/emulator filters, folder navigation, recursive search, file-type filters and sorting.\n\nIncludes multi-selection, copy/move/paste, rename/new folder, recoverable Trash/restore, file details, bounded text and raster-image previews, and a Gaia on-screen keyboard. Advanced mode is explicit and session-only: hidden files, direct paths, OS files and import from readable mounted drives. Core OS files remain read-only; no privileged file service or external desktop file dialogs are used.\n\nOperations refuse overwrites, protected root folders, symbolic-link writes, special-file copies and copying a folder into itself. Copies are staged and cancellable. Cross-filesystem Move is refused; copy, verify and Trash the original instead. There is no permanent deletion or automatic Trash purge. The library rescans after file changes.\n\nValidation: 79 Python cases (18 new real-file regressions), 23 authored QML syntax checks, hidden real-Qt Files flow tests, Debian 13 Qt native build and all five CTest suites. Native Files UI/worker operations and four Light/Dark captures passed, along with the full existing Home/Settings UI suite, on one Linux Actions job (255 seconds).\n\nExact built source: e3c3cc94a95d5b5b08ea460fcd1fa0d8fba676d3. QA: https://github.com/t4kas/GaiaOS/actions/runs/41438977107 . Signing and publishing are local; credentials were not put on Actions.\n\nLauncher/application update for Debian 13 amd64; no ISO reinstall is required for this feature on a compatible existing Gaia installation. No ISO or full-system bundle attached. Device/game/media acceptance remains with Chris. Beta only; Stable unchanged.\n",
+    "release_notes": "Gaia Files replaces the Home Apps button with a controller-friendly browser and manager using Gaia Light/Dark UI. ROMs and Emulator Files tabs use actual Gaia data paths, with console/emulator filters, folder navigation, recursive search, file-type filters and sorting.\n\nIncludes multi-selection, copy/move/paste, rename/new folder, recoverable Trash/restore, file details, bounded text and raster-image previews, and a Gaia on-screen keyboard. Advanced mode is explicit and session-only: hidden files, direct paths, OS files and import from readable mounted drives. Core OS files remain read-only; no privileged file service or external desktop file dialogs are used.\n\nOperations refuse overwrites, protected root folders, symbolic-link writes, special-file copies and copying a folder into itself. Copies are staged and cancellable. Cross-filesystem Move is refused; copy, verify and Trash the original instead. There is no permanent deletion or automatic Trash purge. The library rescans after file changes.\n\nValidation: 79 Python cases (18 new real-file regressions), 23 authored QML syntax checks, hidden real-Qt Files flow tests, Debian 13 Qt native build and all five CTest suites. Native Files UI/worker operations and four Light/Dark captures passed, along with the full existing Home/Settings UI suite, in the Debian build jobs. The corrected build passed all new Files checks; an existing held-scroll timing check failed once under load. A bounded runtime-only replay of the exact retained binary passed both Files and the complete existing UI suite, without recompilation.\n\nExact built source: daad1f777489bd365dc676ff837eecd972fd9c62. QA: https://github.com/t4kas/GaiaOS/actions/runs/41441070842 . Signing and publishing are local; credentials were not put on Actions.\n\nLauncher/application update for Debian 13 amd64; no ISO reinstall is required for this feature on a compatible existing Gaia installation. No ISO or full-system bundle attached. Device/game/media acceptance remains with Chris. Beta only; Stable unchanged.\n\nThis supersedes 0.4.8-beta.5 and fixes the controller mapping: X selects items in the Files list, B goes back, Y opens actions. File dialogs still handle X/Close as cancellation. Replay: https://github.com/t4kas/GaiaOS/actions/runs/41442098516 .\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.5-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.5/gaia-launcher-0.4.8-beta.5-x86_64.tar.zst",
-        "size_bytes": 7956487,
-        "sha256": "5587fd31bfd2c6b00272e48298341e268b5dd175400fcbfdfc30e71034dc63f2"
+        "file_name": "gaia-launcher-0.4.8-beta.6-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.6/gaia-launcher-0.4.8-beta.6-x86_64.tar.zst",
+        "size_bytes": 7956453,
+        "sha256": "faf500f91880190f859c490e1a6f838ed8b96d1485f9fe6517ff3946bf083f40"
       }
     ]
   }
