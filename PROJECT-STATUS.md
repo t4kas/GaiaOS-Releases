@@ -1,6 +1,50 @@
 # Release distribution status
 
-Updated: 1 November 2026.
+Updated: 2 November 2026.
+
+## Beta 0.4.8-beta.4 published — SETTINGS-061 (2 November 2026)
+
+Settings → Software now provides scoped RetroArch Video, Audio, Saves & resume
+and Controllers preferences: rotation/threaded video, audio latency/sync, automatic
+states, save intervals/slots, player ports and controller detection. Per-key
+help/inheritance reset, safe scope reset confirmation and scrolling are implemented.
+Shared Gaia Light/Dark windows/buttons cover Settings information, emulator readiness,
+advanced-frontend confirmation and display Keep/Revert. Routine success stays quiet.
+See docs/EMULATOR-PREFERENCES.md for controls/defaults and support boundaries.
+
+Published launcher Beta **0.4.8-beta.4**, exact built source
+`c08e80d78d6e2204a72cad5d2181d7ec88e6d425` (implementation c24f72f plus QA fixes):
+https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.4 .
+Package: 7,557,627 bytes, SHA-256
+`df757f28329d1f3adf03037b6d08db95b43a7ed1ce94a01c4320edfa5b130603`.
+Existing Ed25519 trust key verified; signing/publishing ran locally, with no publisher
+credentials on Actions. All four public asset sizes/hashes and Beta read-back verified.
+Stable is unchanged (release:null). Public channel validator and six manifest cases pass.
+
+Validation passed: 61 Python cases, 20 authored QML syntax checks, ShellCheck,
+hidden Qt 6.8.3 settings-flow probe with mocks, Debian 13 native Qt 6.8.2 build and
+all four CTest suites (50.26 seconds). Native Xvfb/Mesa OpenGL Light/Dark captures
+were inspected. Build/check/capture run 41429568432 retained the exact unsigned stage.
+The complete native UI suite passed in runtime-only replay 41431116419 of that same
+binary, without product changes or recompilation: modal/dropdown routing, held
+Select/repeat acceleration (19 rows), update error/retry/restart, theme persistence,
+fullscreen and actual-backend emulator save/single-key reset/confirmation.
+
+Actions used five Linux jobs, 790 seconds total (13m10s actual job duration, not an
+account-wide billing reading). Initial attempts found checkout trust and test-fixture
+cleanup/indentation defects; those fixtures were fixed and locally smoke-tested.
+The full build job's update-retry timeout did not recur in the complete replay;
+its cause is not established. Timeout output is now retained for diagnosis.
+The workflow has no schedule/matrix or normal source-push trigger: one explicit
+four-minute build job, or an optional two-minute manual replay of a retained build;
+artifacts expire after three days. Publishing remains independent of Actions.
+
+This is an application update, not a new ISO/system image. No old VM, physical disk
+or real game was used. Emulator gameplay/save reliability, physical audio/controllers,
+VM/GPU and installer/system-update acceptance remain with Chris. Scope complete;
+publisher reservation released.
+
+Full asset hashes and commands: docs/RELEASE-0.4.8-beta.4.md.
 
 ## Beta 0.4.8-beta.3 published — BETA-059 (1 November 2026)
 
