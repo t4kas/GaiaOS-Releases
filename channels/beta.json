@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.4",
-    "tag": "v0.4.8-beta.4",
-    "published_at": "2026-11-02T10:47:02.199416Z",
-    "source_commit": "c08e80d78d6e2204a72cad5d2181d7ec88e6d425",
+    "version": "0.4.8-beta.5",
+    "tag": "v0.4.8-beta.5",
+    "published_at": "2026-11-02T11:52:02.476801Z",
+    "source_commit": "e3c3cc94a95d5b5b08ea460fcd1fa0d8fba676d3",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "Gaia Settings now provides scoped RetroArch Video, Audio, Saves & resume and Controllers preferences, including rotation, threaded video, latency/synchronization, automatic states, save intervals/slots and player/autodetection options. Per-setting help explains defaults, inheritance and support; settings apply on the next game launch.\n\nGaia-styled Light/Dark dialogs and action buttons now cover settings information, emulator readiness, advanced-frontend confirmation, reset confirmation and display Keep/Revert. Long preference lists scroll with controller selection; routine successful changes stay quiet.\n\nValidation: 61 Python cases, 20 authored QML syntax checks, four native CTest suites, hidden Qt settings flow and native UI/input/update/theme/persistence probes. The initial update-retry probe timed out in the full build job; a short runtime-only replay of the same retained native binary passed the complete suite without product changes or recompilation. Native Light/Dark captures use Xvfb and Mesa OpenGL. No game, VM/device, ISO installation or physical audio/controller acceptance is claimed; Chris owns those checks.\n\nThis is a Debian 13 amd64 launcher/application update. It does not replace the base system or installer image. Beta channel only; Stable unchanged.\n\nExact built source: c08e80d78d6e2204a72cad5d2181d7ec88e6d425. Native build/check/captures run: https://github.com/t4kas/GaiaOS/actions/runs/41429568432 . Full UI replay: https://github.com/t4kas/GaiaOS/actions/runs/41431116419 .\n",
+    "release_notes": "Gaia Files replaces the Home Apps button with a controller-friendly browser and manager using Gaia Light/Dark UI. ROMs and Emulator Files tabs use actual Gaia data paths, with console/emulator filters, folder navigation, recursive search, file-type filters and sorting.\n\nIncludes multi-selection, copy/move/paste, rename/new folder, recoverable Trash/restore, file details, bounded text and raster-image previews, and a Gaia on-screen keyboard. Advanced mode is explicit and session-only: hidden files, direct paths, OS files and import from readable mounted drives. Core OS files remain read-only; no privileged file service or external desktop file dialogs are used.\n\nOperations refuse overwrites, protected root folders, symbolic-link writes, special-file copies and copying a folder into itself. Copies are staged and cancellable. Cross-filesystem Move is refused; copy, verify and Trash the original instead. There is no permanent deletion or automatic Trash purge. The library rescans after file changes.\n\nValidation: 79 Python cases (18 new real-file regressions), 23 authored QML syntax checks, hidden real-Qt Files flow tests, Debian 13 Qt native build and all five CTest suites. Native Files UI/worker operations and four Light/Dark captures passed, along with the full existing Home/Settings UI suite, on one Linux Actions job (255 seconds).\n\nExact built source: e3c3cc94a95d5b5b08ea460fcd1fa0d8fba676d3. QA: https://github.com/t4kas/GaiaOS/actions/runs/41438977107 . Signing and publishing are local; credentials were not put on Actions.\n\nLauncher/application update for Debian 13 amd64; no ISO reinstall is required for this feature on a compatible existing Gaia installation. No ISO or full-system bundle attached. Device/game/media acceptance remains with Chris. Beta only; Stable unchanged.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.4-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.4/gaia-launcher-0.4.8-beta.4-x86_64.tar.zst",
-        "size_bytes": 7557627,
-        "sha256": "df757f28329d1f3adf03037b6d08db95b43a7ed1ce94a01c4320edfa5b130603"
+        "file_name": "gaia-launcher-0.4.8-beta.5-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.5/gaia-launcher-0.4.8-beta.5-x86_64.tar.zst",
+        "size_bytes": 7956487,
+        "sha256": "5587fd31bfd2c6b00272e48298341e268b5dd175400fcbfdfc30e71034dc63f2"
       }
     ]
   }
