@@ -2,6 +2,23 @@
 
 Updated: 2 November 2026.
 
+## Beta 0.4.8-beta.8 published — UPDATE-SYSTEM-068 (2 November 2026)
+
+Signed launcher **0.4.8-beta.8** is published:
+https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.8 .
+Built by Claude Code in a fresh Debian 13 chroot from exact source
+`cc2d65c6c1f4029c9090b8d4a2d16096c3d62ce2` (RAUC check-purpose=codesign fix,
+installed-system launcher updates, image version stamping). ./dev check: 125 Python
+cases and all seven CTest suites passed. Package 8,234,465 bytes; SHA-256
+`722ec0b109be24e7ca5c5f9b5b59168105f9c37424bd8feae6608debc81f7b22`.
+Signed locally with the existing Ed25519 key; a one-time upload-only job
+(run 41525236184; first attempt 41525099531 failed before any API call because
+`*.tar.zst` is git-ignored) used built-in repository credentials, then the job and
+staged public files were removed. All four anonymous downloads, SHA256SUMS and both
+signatures verified independently; Beta feed advanced and read back; Stable and
+system-beta unchanged. Existing Beta 4 disk installs need the 0.4.8-beta.8 installer
+ISO (reinstall). Chris owns device acceptance.
+
 ## Beta 0.4.8-beta.7 published — ARTWORK-063 / RELEASE-065 (2 November 2026)
 
 Signed launcher **0.4.8-beta.7** is published:

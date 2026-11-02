@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.7",
-    "tag": "v0.4.8-beta.7",
-    "published_at": "2026-11-02T15:55:18Z",
-    "source_commit": "b6d605d51b8c0a3c75ae11ac317cd1e1097f3c41",
+    "version": "0.4.8-beta.8",
+    "tag": "v0.4.8-beta.8",
+    "published_at": "2026-11-02T21:06:30Z",
+    "source_commit": "cc2d65c6c1f4029c9090b8d4a2d16096c3d62ce2",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.7 adds automatic Libretro game artwork with offline caching and optional ScreenScraper bring-your-own developer credentials. Settings → Software → Library artwork offers manual downloads, provider enable/disable, masked credential entry, connection testing, preferred region and credential removal. Local covers take priority; portrait artwork is displayed without cropping.\n\nScreenScraper matches supported raw ROM/ISO files using locally calculated CRC32/MD5/SHA1 and file size. Compressed disc containers use Libretro/local images. Only metadata and hashes leave the device; no ROMs or shared API keys are included.\n\nExact built source: b6d605d51b8c0a3c75ae11ac317cd1e1097f3c41. Debian 13 QA: https://github.com/t4kas/GaiaOS/actions/runs/41467847726 . Passed 105 Python tests, 24 QML syntax checks, ShellCheck, native build, all six CTest suites, native artwork/credential and Files probes, and the complete existing UI suite. Light/Dark artwork captures reviewed. Provider HTTP/authentication uses fixtures; real provider/device/game acceptance remains with Chris.\n\nThis is the exact retained Debian 13 build, packaged and signed locally using the existing Ed25519 trust key. Signing keys were not sent to Actions. Launcher/application update only; no ISO reinstall or full-system bundle. Beta only; Stable unchanged.\n",
+    "release_notes": "GaiaOS 0.4.8-beta.8 fixes system updates on disk installations and brings the launcher update support for installed systems.\n\n- Installed systems now accept Gaia's signed system updates. Earlier images rejected the signing certificate (\"unsuitable certificate purpose\") because RAUC checked the wrong certificate purpose; the A/B system configuration now checks Code Signing.\n- Disk installations check both the launcher feed and the system feed, so launcher updates also reach installed systems.\n- The launcher reports its real release version on new images instead of 0.4.8-beta.1.\n\nExisting 0.4.8-beta.4 disk installations cannot install system updates and need a one-time reinstall from the 0.4.8-beta.8 installer ISO. Launcher/application update only; no full-system bundle. Beta only; Stable unchanged.\n\nQuick local checks passed in a Debian 13 chroot. VM/hardware acceptance: pending Chris.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.7-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.7/gaia-launcher-0.4.8-beta.7-x86_64.tar.zst",
-        "size_bytes": 8257644,
-        "sha256": "6b1f4bc1c47024c5a434b9feb1d84c575a5812bb4cfd9c5b037f870855dec550"
+        "file_name": "gaia-launcher-0.4.8-beta.8-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.8/gaia-launcher-0.4.8-beta.8-x86_64.tar.zst",
+        "size_bytes": 8234465,
+        "sha256": "722ec0b109be24e7ca5c5f9b5b59168105f9c37424bd8feae6608debc81f7b22"
       }
     ]
   }
