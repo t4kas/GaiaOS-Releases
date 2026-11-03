@@ -2,6 +2,22 @@
 
 Updated: 3 November 2026.
 
+## Beta 0.4.8-beta.10 published — RELEASE-073 (3 November 2026)
+
+Signed launcher **0.4.8-beta.10** is published:
+https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.10 .
+Redesigned Files app, clearer unavailable-GPU message, and the launcher half of
+VM GPU graphics (needs the matching OS startup scripts, not yet in any system image).
+Built by Claude Code in a fresh Debian 13 chroot from exact source
+`07dfe8dc7bb85f1b3695288bb39a3a92fb2c2ad7`; original Ed25519 key verified against
+the committed public key. 142 Python cases (one optional skip), 29 QML syntax files,
+seven CTest suites and the native Files UI probe passed. Package 8,505,443 bytes;
+SHA-256 `ed0850741e74f3095f2a7fbc18646a406dc6a2505595a5b9e917e16e365c883c`.
+Uploaded by one-time push-triggered job 41549735739 (built-in token, no keys);
+workflow and transport copy removed afterwards. All four anonymous downloads matched
+the local bytes before the Beta feed advanced. Stable and system feeds unchanged;
+no ISO/system bundle. Chris owns device acceptance.
+
 ## Beta 0.4.8-beta.9 published — UI-GRAPHICS-069 (3 November 2026)
 
 Signed launcher **0.4.8-beta.9** is published:
