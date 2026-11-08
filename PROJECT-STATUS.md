@@ -1,5 +1,15 @@
 # Release distribution status
 
+## System Beta 13 withdrawn — UPDATE-BOOT-080 (9 November 2026)
+
+Chris's recording shows a Beta 8 system upgrading, rebooting, then console-kiosk.sh
+exiting at line 14 because XDG_RUNTIME_DIR is unset. This is a post-update session
+startup failure; the recording does not establish screen-recording load as its cause.
+System Beta is temporarily empty to stop further offers while Codex investigates
+and prepares a corrected system update. Signed .13 assets/tag retained for audit.
+Launcher/Stable feeds unchanged. Recovery/boot acceptance pending Chris.
+
+
 ## System Beta 0.4.8-beta.13 published — SYSTEM-BETA-079 (9 November 2026)
 
 First signed system Beta published from exact source
