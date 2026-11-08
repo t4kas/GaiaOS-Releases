@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.11",
-    "tag": "v0.4.8-beta.11",
-    "published_at": "2026-11-07T15:56:03Z",
-    "source_commit": "640356703963dbbb0277944a9e066b9086f85f79",
+    "version": "0.4.8-beta.12",
+    "tag": "v0.4.8-beta.12",
+    "published_at": "2026-11-08T22:52:20Z",
+    "source_commit": "eda96b378d351c5f1537829c30fa77aad62f7b6a",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.11\n\nSource: 640356703963dbbb0277944a9e066b9086f85f79\n\nLauncher/application Beta based on latest main, including UX-MEDIA-075.\n\n- Files: external-drive discovery and read-only mount requests, refresh, and import to Gaia with conflict protection.\n- Artwork: covers, screenshots, title screens and logo style selection, with immediate cache refresh and local-image priority.\n- UI: eased Settings scrolling, focus bounce refinements and animated popup entry/exit.\n- Software Update: two-second checking window and clearer up-to-date result.\n\nExisting systems need UDisks and filesystem support packages for unmounted-drive access; launcher updates cannot install OS packages. Already mounted drives remain usable. No ISO or system bundle is included. Stable and system feeds remain unchanged.\n\nDebian 13 amd64 native build; Python, QML syntax, ShellCheck and seven CTest suites passed. Native Files/artwork/full X11 UI replay passed with isolated fixtures. Original trusted Ed25519 key used locally; private keys never uploaded.\n\nVM/device, actual external-drive/exFAT, controller and performance acceptance: pending Chris.\n",
+    "release_notes": "GaiaOS 0.4.8-beta.12\n\nFresh Debian 13 amd64 launcher build from latest main, including the Beta 11 release records. Application behavior is unchanged from Beta 11: external-drive browsing/import, artwork styles, popup/focus motion and delayed update checks.\n\nSource: eda96b378d351c5f1537829c30fa77aad62f7b6a\n\nPython, QML, ShellCheck and native CTest checks run before signing. VM/hardware acceptance remains pending Chris. This is a launcher update; it does not include an ISO, system bundle or OS packages. Existing images need a future system update for UDisks/unmounted-drive support; already mounted drives remain usable.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.11-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.11/gaia-launcher-0.4.8-beta.11-x86_64.tar.zst",
-        "size_bytes": 8545324,
-        "sha256": "208993556b89d45bb9f5303da814028259e37daf2aab8f1d0bacbbe5cc1a1677"
+        "file_name": "gaia-launcher-0.4.8-beta.12-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.12/gaia-launcher-0.4.8-beta.12-x86_64.tar.zst",
+        "size_bytes": 8545326,
+        "sha256": "d9557b981f5833e0f52faca72f971394c96233470480d256fb2b677df1178a41"
       }
     ]
   }

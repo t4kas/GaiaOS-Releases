@@ -14,11 +14,11 @@ Feed endpoints used by the Gaia updater:
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/stable.json`
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/beta.json`
 
-Beta now points to signed [0.4.8-beta.11](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.11).
-It adds external-drive browsing/import, artwork styles and UI motion refinements.
+Beta now points to signed [0.4.8-beta.12](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.12).
+It is a fresh latest-main build; application behavior is unchanged from Beta 11.
 All four downloads and both signatures were verified before advancing Beta.
-See the [publication record](docs/RELEASE-0.4.8-beta.11.md). Device acceptance is pending
-Chris. This launcher update requires OS packages for mounting unmounted external drives.
+See the [publication record](docs/RELEASE-0.4.8-beta.12.md). Device acceptance is pending
+Chris. Unmounted external-drive support requires OS packages on existing images.
 
 GitHub Releases is the distribution host for all update artifacts. Bounded, optional source-repository
 Actions jobs may build/test unsigned artifacts. Maintainers sign/publish locally,
