@@ -8,6 +8,7 @@ account to read these public channel feeds or download public release assets.
 | --- | --- | --- |
 | Stable | [channels/stable.json](channels/stable.json) | Released only on Chris's explicit instruction |
 | Beta | [channels/beta.json](channels/beta.json) | Default channel for tested new development builds |
+| System Beta | [channels/system-beta.json](channels/system-beta.json) | Signed full-system updates for compatible A/B installs |
 
 Feed endpoints used by the Gaia updater:
 
@@ -19,6 +20,8 @@ It is a fresh latest-main build; application behavior is unchanged from Beta 11.
 All four downloads and both signatures were verified before advancing Beta.
 See the [publication record](docs/RELEASE-0.4.8-beta.12.md). Device acceptance is pending
 Chris. Unmounted external-drive support requires OS packages on existing images.
+
+System Beta now points to signed [0.4.8-beta.13](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.13), including the external-drive OS packages and the matching launcher. See [system release details and installation limits](docs/RELEASE-0.4.8-beta.13.md). Old Beta 4 verification requires a corrected installation image/reinstall; no new ISO is included here. Boot/device acceptance remains pending Chris.
 
 GitHub Releases is the distribution host for all update artifacts. Bounded, optional source-repository
 Actions jobs may build/test unsigned artifacts. Maintainers sign/publish locally,

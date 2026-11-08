@@ -57,10 +57,11 @@ and mark the feature/release as partially delivered; do not call a launcher-only
 release complete for that feature. Do not produce another launcher-only Beta just
 to close the missing-system-release work or its release-policy record. Existing
 explicit stop instructions and another agent's owned artifacts remain in force;
-this standing policy does not transfer ownership of the paused SYSTEM-BETA-074.
+record any explicit resumption or reassignment in WORK-CLAIMS.md before proceeding.
 
 Current example: external-drive discovery/import is in launcher Beta 12, but
 unmounted-drive support also requires udisks2, exfatprogs, ntfs-3g and the matching
-UDisks/Polkit image configuration. The package list already includes these; they
-have not been delivered by Beta 12's launcher package. System publication and real
-USB/exFAT acceptance remain pending; already mounted drives remain usable.
+UDisks/Polkit image configuration. The package list includes these. Launcher Beta 12 delivered the UI; signed system
+Beta 13 now delivers the OS dependencies on compatible provisioned A/B installs.
+Old Beta 4 verification needs a corrected installation image/reinstall. Real USB/
+exFAT and boot/update/rollback acceptance remain pending Chris.

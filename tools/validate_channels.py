@@ -16,7 +16,8 @@ def require(condition, message):
 def keys(obj, expected):
     require(isinstance(obj, dict) and set(obj) == set(expected), 'Unexpected or missing fields')
 
-def validate(data, expected_channel):
+def validate(data, expected_channel, expected_component="launcher"):
+    require(expected_component in ('launcher', 'system'), 'Unsupported component')
     keys(data, ['schema_version', 'channel', 'release'])
     require(type(data['schema_version']) is int and data['schema_version'] == 1, 'Unsupported schema version')
     require(expected_channel in ('stable', 'beta') and data['channel'] == expected_channel, 'Channel mismatch')
@@ -33,14 +34,18 @@ def validate(data, expected_channel):
     require(isinstance(release['source_commit'], str) and re.fullmatch('[0-9a-f]{40}', release['source_commit']), 'Invalid source commit')
     for name in ['minimum_updater_version', 'minimum_base_version']:
         require(isinstance(release[name], str) and re.fullmatch(VERSION, release[name]), 'Invalid compatibility version')
+    if expected_component == 'system':
+        require(tuple(map(int, release['minimum_updater_version'].split('.'))) >= (2, 0, 0), 'System updates require protocol 2')
     require(isinstance(release['release_notes'], str) and release['release_notes'].strip(), 'Missing release notes')
     require(isinstance(release['assets'], list) and release['assets'], 'Missing assets')
     targets, names = set(), set()
     for asset in release['assets']:
         keys(asset, ['component', 'platform', 'architecture', 'file_name', 'url', 'size_bytes', 'sha256'])
-        require(asset['component'] == 'launcher' and asset['platform'] == 'linux-debian-13' and asset['architecture'] == 'x86_64', 'Unsupported target')
+        require(asset['component'] == expected_component and asset['platform'] == 'linux-debian-13' and asset['architecture'] == 'x86_64', 'Unsupported target')
         name = asset['file_name']
         require(isinstance(name, str) and re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]*', name), 'Invalid filename')
+        if expected_component == 'system':
+            require(name.endswith('.raucb'), 'System updates require a RAUC bundle')
         url = f"https://github.com/t4kas/GaiaOS-Releases/releases/download/{release['tag']}/{name}"
         require(asset['url'] == url, 'Wrong repository, tag or asset URL')
         require(type(asset['size_bytes']) is int and asset['size_bytes'] > 0, 'Invalid asset size')
@@ -55,9 +60,13 @@ def main():
     parser.add_argument('--root', type=Path, default=ROOT)
     args = parser.parse_args()
     try:
-        for channel in ['stable', 'beta']:
-            validate(json.loads((args.root / 'channels' / f'{channel}.json').read_text()), channel)
-            print(f'{channel}: valid')
+        for component, prefix in [('launcher', ''), ('system', 'system-')]:
+            for channel in ['stable', 'beta']:
+                path = args.root / 'channels' / f'{prefix}{channel}.json'
+                if component == 'system' and not path.exists():
+                    continue
+                validate(json.loads(path.read_text()), channel, component)
+                print(f'{prefix}{channel}: valid')
     except (ValueError, OSError, TypeError) as error:
         parser.exit(1, f'Invalid channel metadata: {error}\n')
 
