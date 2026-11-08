@@ -1,5 +1,23 @@
 # Release distribution status
 
+## Coordinated release scope — RELEASE-POLICY-078 (9 November 2026)
+
+Chris directs every update to include newly required OS packages and any necessary
+system release without a separate reminder. Shared AGENTS.md and publishing guidance
+now require dependency review against the last actual published system baseline,
+image-recipe updates, rootfs verification and coordinated component/feed publication.
+Launcher-only publication cannot mark an OS-dependent feature fully delivered.
+
+External-drive packages udisks2/exfatprogs/ntfs-3g are already in the image recipe;
+Beta 12 delivers the launcher half only. Required system delivery remains pending.
+SYSTEM-BETA-074 was explicitly stopped by Chris and remains owned by Claude Code;
+its artifacts were not resumed or republished. This policy task changes no binary,
+feed or device. No extra launcher-only release was made to close this record.
+Validation: policy/document diff reviewed, external-drive recipe requirements
+confirmed, distribution manifest validation and six existing cases passed.
+Policy scope complete; system release and Chris's real-device acceptance pending.
+
+
 ## Beta 0.4.8-beta.12 published — RELEASE-077 (9 November 2026)
 
 Fresh signed Debian 13 amd64 launcher build from exact latest-main source
