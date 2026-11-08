@@ -1,5 +1,6 @@
 name: One-time upload of locally signed Beta 0.4.8-beta.12
 # One-time upload of an already locally signed and verified package (RELEASE-077).
+# Include the explicitly tracked signed archive despite the normal build-output ignore.
 on:
   push:
     branches: [main]
