@@ -1,0 +1,13 @@
+GaiaOS 0.4.8-beta.14 — corrected system Beta
+
+Fixes the Beta 13 post-update startup failure shown as “XDG_RUNTIME_DIR: parameter not set”. Restored checkout directories had been copied into the image with private permissions; /usr/share mode 0700 prevented the D-Bus service account from reading its configuration. This image restores public service paths and polkit directory permissions. Image staging now normalizes public directory/file modes, and the signing tool rejects inaccessible service paths in the actual ext4 image.
+
+The console user manager/logind start before greetd. The kiosk can use the existing correctly owned systemd runtime directory when PAM omits XDG_RUNTIME_DIR, checks its real user-bus socket and refuses unsafe paths. The failed-boot watchdog requests a restart even if RAUC cannot mark the failed slot bad.
+
+System source: 08cd11b57edbbe48a5814c48ab10c21d7ee31d55. Retained verified Debian 13 system base from Beta 13, updated offline with these exact source changes and a newly built Beta 14 launcher. Filesystem UUID regenerated. Existing OS packages, kernel, firmware and external-drive dependencies udisks2/exfatprogs/ntfs-3g are retained. This is not a fresh Debian package installation or a new ISO.
+
+Validation: 159 Python tests, 30 QML syntax checks, ShellCheck, seven native CTest suites, actual non-root console rendering, real ext4 permission-gate regression and read-only filesystem check passed. An isolated systemd container first reproduced D-Bus's permission-denied failure; the corrected image then started the real system bus, logind, console user manager and user bus and passed the session probe with XDG_RUNTIME_DIR deliberately unset. This is container validation, not a Parallels/BIOS/UEFI acceptance result. Chris reports that one clean restart returned the failed VM to Gaia; the corrected update's VM/device acceptance remains pending him.
+
+The previous Beta 13 system feed was withdrawn and its public release marked withdrawn; its assets remain for audit. This full signed system bundle includes the current launcher. The launcher-only Beta feed remains at Beta 12. Compatible provisioned A/B installs can update through Software Update. Old Beta 4 certificate-purpose verification still requires a corrected installation image/reinstall. No disk erase, layout migration or new installer ISO is included.
+
+Existing RAUC and Ed25519 trust identities preserved. Signing stays local. Real USB/exFAT, install/reboot/rollback, Parallels/GPU/controller/performance and hardware acceptance remain pending Chris. The old Debian test VM and physical disks were not used.
