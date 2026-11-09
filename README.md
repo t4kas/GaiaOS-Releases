@@ -21,7 +21,7 @@ All four downloads and both signatures were verified before advancing Beta.
 See the [publication record](docs/RELEASE-0.4.8-beta.12.md). Device acceptance is pending
 Chris. Unmounted external-drive support requires OS packages on existing images.
 
-System Beta is temporarily paused after a reported Beta 13 post-update session startup failure. Do not install Beta 13. Its assets remain available for diagnosis; UPDATE-BOOT-080 is preparing a corrected system release. Launcher Beta 12 and Stable are unchanged.
+System Beta now points to signed [0.4.8-beta.14](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.14), correcting Beta 13's image-permission/session startup failure and retaining the external-drive OS packages. Beta 13 is withdrawn. See [verification and compatibility](docs/RELEASE-0.4.8-beta.14.md). Corrected-update boot/device acceptance remains pending Chris; launcher Beta 12 and Stable are unchanged.
 
 GitHub Releases is the distribution host for all update artifacts. Bounded, optional source-repository
 Actions jobs may build/test unsigned artifacts. Maintainers sign/publish locally,

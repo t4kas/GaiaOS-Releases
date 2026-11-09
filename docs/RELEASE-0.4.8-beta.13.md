@@ -1,4 +1,4 @@
-> Withdrawn from the system Beta feed: reported post-update startup failure, `XDG_RUNTIME_DIR: parameter not set` in console-kiosk.sh:14. Do not install Beta 13 while UPDATE-BOOT-080 investigates. Assets retained for audit.
+> Withdrawn from the system Beta feed: reported post-update startup failure, `XDG_RUNTIME_DIR: parameter not set` in console-kiosk.sh:14. Do not install Beta 13; corrected system Beta 14 is available. Assets retained for audit.
 
 ## System Beta 0.4.8-beta.13 published — SYSTEM-BETA-079 (9 November 2026)
 
