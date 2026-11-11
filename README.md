@@ -15,11 +15,11 @@ Feed endpoints used by the Gaia updater:
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/stable.json`
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/beta.json`
 
-Beta now points to signed [0.4.8-beta.12](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.12).
-It is a fresh latest-main build; application behavior is unchanged from Beta 11.
-All four downloads and both signatures were verified before advancing Beta.
-See the [publication record](docs/RELEASE-0.4.8-beta.12.md). Device acceptance is pending
-Chris. Unmounted external-drive support requires OS packages on existing images.
+Beta now points to signed [0.4.8-beta.16](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.16).
+Fresh latest-main Debian launcher build adds the paused-game quick-menu overlay,
+themed icons and shared Gaia volume sliders. All four public downloads and both
+signatures verified before advancing Beta. See the [publication record](docs/RELEASE-0.4.8-beta.16.md).
+Device acceptance remains pending Chris. System Beta 15 already provides the OS dependencies.
 
 System Beta now points to signed [0.4.8-beta.15](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.15), delivering the controller quick menu, current emulator settings/window recovery, Dolphin and controller HID rules in a fresh Debian system with matching launcher. See [verification and compatibility](docs/RELEASE-0.4.8-beta.15.md). VM/device acceptance remains pending Chris; launcher Beta 12 and Stable are unchanged.
 

@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.12",
-    "tag": "v0.4.8-beta.12",
-    "published_at": "2026-11-08T22:52:20Z",
-    "source_commit": "eda96b378d351c5f1537829c30fa77aad62f7b6a",
+    "version": "0.4.8-beta.16",
+    "tag": "v0.4.8-beta.16",
+    "published_at": "2026-11-11T18:42:03Z",
+    "source_commit": "047984c5343f177d6c202c9082b7dbce05b456f4",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.12\n\nFresh Debian 13 amd64 launcher build from latest main, including the Beta 11 release records. Application behavior is unchanged from Beta 11: external-drive browsing/import, artwork styles, popup/focus motion and delayed update checks.\n\nSource: eda96b378d351c5f1537829c30fa77aad62f7b6a\n\nPython, QML, ShellCheck and native CTest checks run before signing. VM/hardware acceptance remains pending Chris. This is a launcher update; it does not include an ISO, system bundle or OS packages. Existing images need a future system update for UDisks/unmounted-drive support; already mounted drives remain usable.\n",
+    "release_notes": "GaiaOS 0.4.8-beta.16 \u2014 game overlay and Gaia volume sliders\n\nThe quick menu now overlays the paused game's last frame, with transparent launcher presentation, themed action icons and restored fullscreen game focus on Resume. One Gaia slider supports live output volume, saved game volume and UI sound volume with controller steps, pointer dragging and wheel control. Pending live volume writes retain the final requested target.\n\nFresh Debian 13 amd64 launcher build from latest main, source 047984c5343f177d6c202c9082b7dbce05b456f4. Includes the controller Guide quick menu, emulator editors/window recovery, Files/import and artwork features in previous development releases. Existing Ed25519 signing identity preserved; signing remains local.\n\nSystem assessment: published system Beta 15 (source 257cbe2c2089627534e4d2ab378349455d47c92d) already supplies Dolphin, controller HID rules and external-drive packages. No OS recipe or native runtime dependency change since that baseline; this release is the launcher component. Compatible A/B devices should install system Beta 15 if not already installed, then check Beta again for this newer launcher. No new ISO or disk-layout migration. Old Beta 4 certificate-purpose verification still needs corrected installation media/reinstall.\n\nPython, QML, ShellCheck, native CTest and focused quick-menu checks run before publication. Broader headless sustained-list timing is a known intermittent QA limitation; no full broad-replay pass is claimed. VM/hardware boot/update/rollback, real controllers, audio and gameplay acceptance remain pending Chris.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.12-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.12/gaia-launcher-0.4.8-beta.12-x86_64.tar.zst",
-        "size_bytes": 8545326,
-        "sha256": "d9557b981f5833e0f52faca72f971394c96233470480d256fb2b677df1178a41"
+        "file_name": "gaia-launcher-0.4.8-beta.16-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.16/gaia-launcher-0.4.8-beta.16-x86_64.tar.zst",
+        "size_bytes": 9073895,
+        "sha256": "01256cabbd991fa98b172c5d9190ffd33574a8da083fe1d4bfd98659c625b8ca"
       }
     ]
   }
