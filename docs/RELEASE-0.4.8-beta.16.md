@@ -53,4 +53,3 @@ Release: https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.16
 | gaia-launcher-0.4.8-beta.16-x86_64.tar.zst.sig | 64 | `90021c858ce83618e658ed73cc169b13fd74e15d4f788509b7ed678a27f540e7` |
 | SHA256SUMS | 222 | `7aa00fb25f8f36113ed1fe1918facb27123b03d852985aedae0dbb729529f4bd` |
 | SHA256SUMS.sig | 64 | `aabdf04f182ec8c4520552a7208a226da52e1e0f5121e5451e255488271c3167` |
-
