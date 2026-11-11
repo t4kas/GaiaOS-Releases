@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.16",
-    "tag": "v0.4.8-beta.16",
-    "published_at": "2026-11-11T18:42:03Z",
-    "source_commit": "047984c5343f177d6c202c9082b7dbce05b456f4",
+    "version": "0.4.8-beta.17",
+    "tag": "v0.4.8-beta.17",
+    "published_at": "2026-11-11T19:46:26Z",
+    "source_commit": "3e7b714006e36e9620f384e28978f5d5f2ee35f0",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.16 \u2014 game overlay and Gaia volume sliders\n\nThe quick menu now overlays the paused game's last frame, with transparent launcher presentation, themed action icons and restored fullscreen game focus on Resume. One Gaia slider supports live output volume, saved game volume and UI sound volume with controller steps, pointer dragging and wheel control. Pending live volume writes retain the final requested target.\n\nFresh Debian 13 amd64 launcher build from latest main, source 047984c5343f177d6c202c9082b7dbce05b456f4. Includes the controller Guide quick menu, emulator editors/window recovery, Files/import and artwork features in previous development releases. Existing Ed25519 signing identity preserved; signing remains local.\n\nSystem assessment: published system Beta 15 (source 257cbe2c2089627534e4d2ab378349455d47c92d) already supplies Dolphin, controller HID rules and external-drive packages. No OS recipe or native runtime dependency change since that baseline; this release is the launcher component. Compatible A/B devices should install system Beta 15 if not already installed, then check Beta again for this newer launcher. No new ISO or disk-layout migration. Old Beta 4 certificate-purpose verification still needs corrected installation media/reinstall.\n\nPython, QML, ShellCheck, native CTest and focused quick-menu checks run before publication. Broader headless sustained-list timing is a known intermittent QA limitation; no full broad-replay pass is claimed. VM/hardware boot/update/rollback, real controllers, audio and gameplay acceptance remain pending Chris.\n",
+    "release_notes": "GaiaOS 0.4.8-beta.17 \u2014 Home, Playing and navigation feedback\n\nTap PS/Xbox/Guide/Home to return to Home while keeping the running software paused; hold for 500 ms to open the quick menu. The Playing tile shows the profile avatar and resumes the same process. Start + Select remains the hold-only fallback. The quick menu has the narrower layout, inline volume slider, status/time and pinned Power controls. Navigation has faster animated glow, bottom-button icon bounce and the three supplied randomized click sounds.\n\nFresh Debian 13 amd64 launcher build from latest main, source 3e7b714006e36e9620f384e28978f5d5f2ee35f0, including HOME-086 implementation 3cd6842. Original Ed25519 trust identity preserved; signing stays local.\n\nSystem assessment: published system Beta 15 (257cbe2c2089627534e4d2ab378349455d47c92d) already contains required OS packages, Dolphin, controller HID rules and external-drive support. No OS recipe or native runtime dependency changes since that baseline. Compatible A/B installations should install system Beta 15 if needed, reboot, then check Beta again for this launcher. No new ISO, system bundle or disk migration. Old Beta 4 certificate-purpose verification still requires corrected installation media/reinstall.\n\nPython, QML, ShellCheck, native CTest and focused real-launcher quick-menu checks are run before signing/publication. Broad headless held-list timing remains a known intermittent QA limitation. VM/hardware boot/update/rollback, physical controllers, real audio, gameplay and save/resume acceptance remain pending Chris. Process/audio fixtures do not establish physical-device or gameplay acceptance.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.16-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.16/gaia-launcher-0.4.8-beta.16-x86_64.tar.zst",
-        "size_bytes": 9073895,
-        "sha256": "01256cabbd991fa98b172c5d9190ffd33574a8da083fe1d4bfd98659c625b8ca"
+        "file_name": "gaia-launcher-0.4.8-beta.17-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.17/gaia-launcher-0.4.8-beta.17-x86_64.tar.zst",
+        "size_bytes": 9450480,
+        "sha256": "4185a9d11da70fbf7a95947935448f727d3d546ed746888b944c4797f9276c9c"
       }
     ]
   }
