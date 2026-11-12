@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.23",
-    "tag": "v0.4.8-beta.23",
-    "published_at": "2026-11-12T22:13:35Z",
-    "source_commit": "98bb58fc5e074beed699224ac359f0935f158e7a",
+    "version": "0.4.8-beta.24",
+    "tag": "v0.4.8-beta.24",
+    "published_at": "2026-11-12T22:54:03Z",
+    "source_commit": "ee461e0165c1db61765e45f3a2178c82505f99bc",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.23 \u2014 launch, close and quick-menu fixes\n\nIncludes launch-loop sound and prismatic border clipping fixes, blue on-state arrows, software close-from-Home recovery and quick-menu overlay verification/repair with logs/quick-menu.log. The reported real-device blackout was not reproduced in the author's headless Sway/RetroArch replay; overlay verification is included, but real-device confirmation remains pending.\n\nFresh Debian 13 amd64 launcher from latest main, including BUGFIX-097 implementation dd5389a. Exact source/version embedded in gaia-update.json. Preserves notifications, prior launch/Home polish and backward-compatible package layout. Existing signing identities preserved; keys stay local. Archive extraction checked before signing and full signed installation verified with the unchanged system Beta 15 updater.\n\nSystem Beta 15 (257cbe2) already supplies required runtime dependencies. No OS recipe or native dependency changes; no new system bundle, ISO or migration required. Compatible A/B installs should install system Beta 15 if needed, reboot and check Beta again. Old Beta 4 verifier recovery requires corrected installation media/reinstall.\n\nPython, QML, ShellCheck, eight native CTest suites, focused notifications/quick-menu real-launcher checks and signed-package installation are checked before publication. Real-device quick-menu blackout/close behavior, physical controllers, audible output, gameplay/save-resume and VM/hardware boot/update/rollback acceptance remain pending Chris. Automated process/audio fixtures and the author's headless emulator tests do not establish real-device acceptance.\n",
+    "release_notes": "GaiaOS 0.4.8-beta.24 \u2014 quick-menu blackout fix and control polish\n\nFixes the quick-menu blackout reproduced in the author's Debian 13 Qt 6.8/Sway 1.10/RetroArch 1.20 environment by keeping the launcher window transparent. Light/Dark emulator replay passed there; real-device confirmation remains pending Chris. Removes the previous overlay verification workaround.\n\nAlso corrects on-state arrow direction, adds Files bulk placeholder checkboxes, extends Home glow coverage, restores a white volume knob with the supplied KnobAdjust sound and X mute, lets Settings content scroll under its header blur, and uses the Settings panel for Game Preferences.\n\nFresh Debian 13 amd64 launcher from latest main, BUGFIX-097 round 2 implementation 7d86881 plus the required shared-theme token correction for the white volume knob. Exact source/version embedded in gaia-update.json. Preserves notifications, prior fixes and backward-compatible package layout. Existing signing identities preserved; keys stay local. Archive extraction checked before signing and full signed installation verified with the unchanged system Beta 15 updater.\n\nSystem Beta 15 (257cbe2) already supplies required runtime dependencies. No OS recipe or native dependency changes; no new system bundle, ISO or migration required. Compatible A/B installs should install system Beta 15 if needed, reboot and check Beta again. Old Beta 4 verifier recovery requires corrected installation media/reinstall.\n\nPython, QML, ShellCheck, eight native CTest suites, focused notifications/quick-menu UI checks and signed-package installation run before publication. Real-device blackout/close behavior, physical controls/audio, game performance/save-resume and VM/hardware boot/update/rollback acceptance remain pending Chris. Automated fixtures and headless emulator tests do not establish real-device acceptance.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.23-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.23/gaia-launcher-0.4.8-beta.23-x86_64.tar.zst",
-        "size_bytes": 12235185,
-        "sha256": "c4f23ba5f08ea035ee6fce3e37fbb112732864f738387add0c76a91f452559a6"
+        "file_name": "gaia-launcher-0.4.8-beta.24-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.24/gaia-launcher-0.4.8-beta.24-x86_64.tar.zst",
+        "size_bytes": 12213081,
+        "sha256": "fb0159350ad93cd193dc84277491790b3ac40c507a35c80d76a7bbc590a6e140"
       }
     ]
   }
