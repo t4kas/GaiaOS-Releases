@@ -2,22 +2,22 @@
   "schema_version": 1,
   "channel": "beta",
   "release": {
-    "version": "0.4.8-beta.19",
-    "tag": "v0.4.8-beta.19",
-    "published_at": "2026-11-12T01:24:24Z",
-    "source_commit": "587914f0018493a83ad780d3d0bd12f3d5518ab4",
+    "version": "0.4.8-beta.20",
+    "tag": "v0.4.8-beta.20",
+    "published_at": "2026-11-12T15:08:28Z",
+    "source_commit": "80ef19645c01aa447bea474a5f7eee4ec801c41d",
     "minimum_updater_version": "1.0.0",
     "minimum_base_version": "0.4.0",
-    "release_notes": "GaiaOS 0.4.8-beta.19 \u2014 fix Unsupported package layout during update\n\nFixes the Beta 18 installation failure: the Wayland protocol license now ships under config/licenses, a directory accepted by existing installed updaters. No manual updater replacement is needed. Check Beta again and install Beta 19 instead of Beta 18.\n\nIncludes Beta 18's global live quick menu, optional pause with retained frame, Home crossfades/sound and action confirmations. A new packaging gate extracts the real archive using the device updater before signing. Regression covers the installed CMake license destination, signed installation and rollback, and rejects unsupported layouts before signing.\n\nFresh Debian 13 amd64 launcher from the source commit embedded in gaia-update.json. Existing Ed25519 trust identity preserved. System Beta 15 already supplies runtime dependencies; no OS runtime/recipe changes, new system bundle, ISO or migration are required. Compatible A/B installations need system Beta 15. Old Beta 4 verifier recovery still requires corrected installation media/reinstall.\n\nPython, QML, ShellCheck, native CTest and actual signed-package installation with the unchanged system Beta 15 updater are checked before publication. Broad headless held-list timing remains a known intermittent limitation. Physical controllers, audio, gameplay/save-resume and VM/hardware boot/update/rollback acceptance remain pending Chris. Installer tests use a temporary local installation and local download transport; no real device or VM is operated.\n",
+    "release_notes": "GaiaOS 0.4.8-beta.20 \u2014 Home, navigation, toggles and blur polish\n\nHome return now uses a breathing scale/fade transition and only plays its cue on a real return to Home. Navigation glow uses a dithered Gaussian shader with spring motion and icon accents. Settings switches share animated toggles with retained transitions. Dropdown, scrolling edges and Settings headers have updated progressive blurs.\n\nFresh Debian 13 amd64 launcher from latest main, including HOME-POLISH-091 implementation 8bc766d. Exact source/version embedded in gaia-update.json. Includes the Beta 19 package-layout repair; the archive is checked with the installed updater before signing, and signed installation is verified using the unchanged system Beta 15 updater. Existing signing identities preserved; private keys stay local.\n\nSystem assessment: system Beta 15 (257cbe2) already supplies required runtime dependencies. No OS recipe or native dependency changes; shaders are embedded in the launcher. No new system bundle, ISO or migration required. Compatible A/B installations should install system Beta 15 if needed, reboot and check Beta again. Old Beta 4 verifier recovery still requires corrected installation media/reinstall.\n\nPython, QML, ShellCheck, native CTest, focused quick-menu UI and signed-package installation checks run before publication. Broad headless held-list timing remains a known intermittent limitation; prior motion/installer harness failures are recorded separately in project status. Physical controller/audio/gameplay/save-resume, motion feel/GPU performance and VM/hardware boot/update/rollback acceptance remain pending Chris. Automated fixtures do not establish physical device acceptance.\n",
     "assets": [
       {
         "component": "launcher",
         "platform": "linux-debian-13",
         "architecture": "x86_64",
-        "file_name": "gaia-launcher-0.4.8-beta.19-x86_64.tar.zst",
-        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.19/gaia-launcher-0.4.8-beta.19-x86_64.tar.zst",
-        "size_bytes": 10344979,
-        "sha256": "508fb9acba171acb6c032b43ec708141c0d60d6f8a11de8c2df4efaabfe1e6ee"
+        "file_name": "gaia-launcher-0.4.8-beta.20-x86_64.tar.zst",
+        "url": "https://github.com/t4kas/GaiaOS-Releases/releases/download/v0.4.8-beta.20/gaia-launcher-0.4.8-beta.20-x86_64.tar.zst",
+        "size_bytes": 10371526,
+        "sha256": "6173a702cff8ed260b5982efcca996a202cecf5d44368fa961817aa92181daa3"
       }
     ]
   }
