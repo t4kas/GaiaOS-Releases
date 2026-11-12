@@ -1,9 +1,0 @@
-GaiaOS 0.4.8-beta.22 — notifications, transfer center and Beta debugging
-
-Adds notification toasts, a notification center from the quick-menu bell, Downloads/Uploads pages and a Beta-only Debugging category for test notifications and transfers. Tap the main controller button while a toast is visible to open the center. Notifications cover quiet update checks, installed-version/emulator-version changes and transfer completion/failure. No Gaia screen starts real downloads/uploads yet; the transfer engine and pages are ready. Some notification icons use documented stand-ins.
-
-Fresh Debian 13 amd64 launcher from latest main, including NOTIFY-095 implementation 6477d71. Exact source/version embedded in gaia-update.json. Existing backward-compatible package layout and signing identities preserved. Archive extraction checked before signing, and full signed installation verified with the unchanged system Beta 15 updater. Private signing keys stay local.
-
-System Beta 15 (257cbe2) already supplies runtime dependencies. Transfer worker uses Python standard library and toasts reuse existing Sway staging; no OS recipe/native dependency changes or new system bundle, ISO or migration required. Compatible A/B installs should install system Beta 15 if needed, reboot and check Beta again. Old Beta 4 verifier recovery needs corrected installation media/reinstall.
-
-Python, QML, ShellCheck, eight native CTest suites, focused notifications/quick-menu real-launcher tests and older-updater signed install are checked before publication. Headless timing and optional mock/compositor limitations are recorded separately. Real emulator toast overlay, physical main-button shortcut, update notification, audio/gameplay/save-resume and VM/hardware boot/update/rollback acceptance remain pending Chris. Automated fixtures do not establish real-device acceptance.

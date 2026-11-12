@@ -15,9 +15,9 @@ Feed endpoints used by the Gaia updater:
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/stable.json`
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/beta.json`
 
-Beta now points to signed [0.4.8-beta.21](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.21), including direct software launch, cover pop/sound/reveal and the see-through quick menu.
-Older-updater installation, all four public downloads and both signatures verified.
-See [publication details](docs/RELEASE-0.4.8-beta.21.md). Device acceptance pending Chris.
+Beta now points to signed [0.4.8-beta.22](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.22), including notifications, transfer center and Beta debugging controls.
+Older-updater installation, public downloads and signatures verified; see
+[publication details](docs/RELEASE-0.4.8-beta.22.md). Device acceptance pending Chris.
 
 System Beta now points to signed [0.4.8-beta.15](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.15), delivering the controller quick menu, current emulator settings/window recovery, Dolphin and controller HID rules in a fresh Debian system with matching launcher. See [verification and compatibility](docs/RELEASE-0.4.8-beta.15.md). VM/device acceptance remains pending Chris; Stable is unchanged.
 
