@@ -15,12 +15,10 @@ Feed endpoints used by the Gaia updater:
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/stable.json`
 - `https://raw.githubusercontent.com/t4kas/GaiaOS-Releases/main/channels/beta.json`
 
-Beta now points to signed [0.4.8-beta.17](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.17).
-Fresh latest-main Debian launcher build adds 500 ms quick-menu activation, tap Home,
-a profile-avatar Playing/resume tile, animated navigation glow and supplied click sounds.
-All four public downloads and both signatures verified before advancing Beta.
-See the [publication record](docs/RELEASE-0.4.8-beta.17.md).
-Device acceptance remains pending Chris. System Beta 15 already provides the OS dependencies.
+Beta now points to signed [0.4.8-beta.18](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.18).
+Fresh latest-main launcher with the global live quick menu, optional pause and Home
+transitions. All four downloads and both signatures verified before advancing Beta.
+See [publication details](docs/RELEASE-0.4.8-beta.18.md). Device acceptance is pending Chris.
 
 System Beta now points to signed [0.4.8-beta.15](https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.15), delivering the controller quick menu, current emulator settings/window recovery, Dolphin and controller HID rules in a fresh Debian system with matching launcher. See [verification and compatibility](docs/RELEASE-0.4.8-beta.15.md). VM/device acceptance remains pending Chris; Stable is unchanged.
 
