@@ -39,6 +39,12 @@ read-back passed. Stable/system Beta 15 unchanged; previous downloads preserved.
 
 Release: https://github.com/t4kas/GaiaOS-Releases/releases/tag/v0.4.8-beta.21
 
+Upload transport note: run 43258350701 uploaded and published the release, then
+failed its runner-side anonymous download retry window (30 seconds). Independent
+local anonymous downloads of all four files and both signatures succeeded before
+the feed was advanced; API/raw feed and uploader removal verified afterward. The
+runner download failure does not indicate an asset/hash or installed-updater failure.
+
 | Asset | Bytes | SHA-256 |
 | --- | --- | --- |
 | gaia-launcher-0.4.8-beta.21-x86_64.tar.zst | 11628113 | `1f4c1eaea2cd94e966dda687a9ca6d6c4a2995f2699c524c5c322505b933a1c7` |
